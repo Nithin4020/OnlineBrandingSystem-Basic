@@ -1,0 +1,16 @@
+<div class="container">
+    <h3>User Details</h3>
+    <hr>
+    <div *ngFor="let user of users">
+      <!-- <p><strong>User ID:</strong> {{ user.userId }}</p> -->
+      <p><strong>User Name:</strong> {{ user.user_Name }}</p>
+      <p><strong>Email:</strong> {{ user.user_Email }}</p>
+      <p><strong>Phone Number:</strong> {{ user.user_Contact }}</p>
+      <!-- <p><strong>Password:</strong> {{ user.password }}</p> -->
+      <!-- <p><strong>User Status:</strong> {{ user.userStatus }}</p> -->
+      <!-- <p><strong>Role:</strong> {{ user.role }}</p> -->
+  
+      <button class="btn btn-primary" (click)="delete(user.user_Id)">Delete</button> &nbsp;
+      <button class="btn btn-primary" (click)="edit(user.user_Id)">Edit</button>
+    </div>
+  </div>

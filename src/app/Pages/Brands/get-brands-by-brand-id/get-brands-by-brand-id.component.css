@@ -1,0 +1,37 @@
+.container {
+    font-family: 'YourSelectedFont', sans-serif;
+    padding: 20px;
+ }
+ .post-card {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ .post-header {
+    margin-bottom: 10px;
+ }
+ .post-header h2 {
+    margin-bottom: 5px;
+ }
+ .content-box {
+    margin-bottom: 10px;
+ }
+ .details div {
+    margin-bottom: 5px;
+ }
+ .btn {
+    margin-top: 10px;
+ }
+ .comment-section {
+    margin-top: 20px;
+ }
+ .comment-box {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+ }

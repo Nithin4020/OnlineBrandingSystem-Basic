@@ -1,0 +1,49 @@
+.container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+ }
+ .table {
+    width: 100%;
+    border-collapse: collapse;
+ }
+ .table td {
+    padding: 8px;
+ }
+ .form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+ }
+ .password-input-container {
+    position: relative;
+ }
+ .eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+ }
+ .eye-icon i {
+    font-size: 18px;
+    color: #ccc;
+ }
+ .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+ }
+ .btn-primary:hover {
+    background-color: #0056b3;
+ }

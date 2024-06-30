@@ -1,0 +1,41 @@
+<div class="container">
+    <table class="table" *ngIf="isUserExist">
+       <tr>
+           <td>User ID</td>
+           <td>
+               <input type="text" [(ngModel)]="user.user_Id" readonly class="form-control">
+           </td>
+       </tr>
+       <tr>
+           <td>User Name</td>
+           <td>
+               <input type="text" [(ngModel)]="user.user_Name" class="form-control">
+           </td>
+       </tr>
+      
+       <tr>
+           <td>User Email</td>
+           <td>
+               <input type="text" [(ngModel)]="user.user_Email" class="form-control">
+           </td>
+       </tr>
+       <tr>
+        <td>Password</td>
+        <td>
+            <div class="password-input-container">
+                <input type="{{ showPassword ? 'text' : 'password' }}" [(ngModel)]="user.user_Password" class="form-control">
+                <button (click)="togglePasswordVisibility()" class="eye-icon">
+                    <i class="fa" [ngClass]="{'fa-eye': showPassword, 'fa-eye-slash': !showPassword}"></i>
+                </button>
+            </div>
+        </td>
+    </tr>
+    
+       <tr>
+           <td colspan="2">
+               <button class="btn btn-primary" (click)="edit()">Save</button> &nbsp;
+           </td>
+       </tr>
+
+   </table>
+</div>

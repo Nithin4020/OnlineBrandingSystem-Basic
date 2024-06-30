@@ -1,0 +1,22 @@
+<div class="container">
+    <h3>All Brands We Have</h3>
+    <div class="row custom-scroll-area">
+      <div *ngFor="let item of brands" class="col-md-6 mb-3">
+        <div class="post-card">
+          <div class="post-header">
+            <h3>{{ item.brand?.brand_Name }}</h3>
+            <p>Rating: {{ item.averageRating }}</p>
+          </div>
+          <div class="post-content">
+            <p>{{ item.brand?.brand_Description }}</p>
+          </div>
+          <div class="post-meta">
+            <span>Email: {{ item.brand?.brand_Email }}</span>
+            <span>Contact: {{ item.brand?.brand_Phone }}</span>
+            
+            <button class="btn btn-primary" (click)="view(item.brand?.brand_Id)">View</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

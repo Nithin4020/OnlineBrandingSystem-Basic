@@ -1,0 +1,21 @@
+<!-- Add your existing HTML code here -->
+<div class="container">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>User ID</th>
+          <th>User Name</th>
+          <th>User Email</th>
+         
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.user_Id }}</td>
+          <td>{{ user.user_Name }}</td>
+          <td>{{ user.user_Email }}</td>
+        
+        </tr>
+      </tbody>
+    </table>
+  </div>

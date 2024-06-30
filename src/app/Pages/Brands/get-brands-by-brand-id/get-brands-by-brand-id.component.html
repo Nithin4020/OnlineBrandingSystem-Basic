@@ -1,0 +1,37 @@
+<div class="container" style="font-family: 'YourSelectedFont', sans-serif;">
+    <div *ngFor="let item of brands" class="post-card">
+      <div class="post-header">
+        <h2>{{ item.brand_Name }}</h2>
+        <p>Rating: {{ ratingValue }}</p>
+        <p>PageViews: {{ pageViews.pageViews_Num }}</p>
+      </div>
+  
+      <div class="content-box">
+        <p>{{ item.brand_Description }}</p>
+      </div>
+  
+      <div class="details">
+        <div><strong>Brand Email:</strong> {{ item.brand_Email }}</div>
+        <div><strong>Brand Contact:</strong> {{ item.brand_Phone }}</div>
+      </div>
+      <div *ngIf="userRole == 'Admin'">
+        <button class="btn btn-primary mt-3" (click)="Edit(item.brand_Id)">Edit Brand</button>&nbsp;
+        <button class="btn btn-primary mt-3" (click)="Delete(item.brand_Id)">Delete Brand</button>
+      </div>
+  
+      <div class="comment-section">
+        <input type="number" [(ngModel)]="rating.rating" class="form-control">
+        <button class="btn btn-primary mt-3" (click)="addRating(item.brand_Id)">Add Rating </button>
+  
+        <div *ngFor="let rate of ratings" class="comment-box">
+          <div class="content-box">
+            <!-- <p><strong>{{ rate.user_Name }}</strong></p> -->
+            <p>{{ rate.rating }}</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Add spacing or styling as needed between posts -->
+      <hr class="my-4">
+    </div>
+  </div>

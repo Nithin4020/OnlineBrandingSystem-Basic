@@ -1,0 +1,40 @@
+<div class="container">
+    <h3>Add Brand</h3>
+    <table class="table">
+        <tr>
+            <td><h4>Brand Name</h4></td>
+            <td>
+                <input type="text" [(ngModel)]="brand.brand_Name" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td><h4>Brand Description</h4></td>
+            <td>
+                <textarea [(ngModel)]="brand.brand_Description" class="form-control" rows="5"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><h4>Email</h4></td>
+            <td>
+                <input type="text" [(ngModel)]="brand.brand_Email" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td><h4>Phone Number</h4></td>
+            <td>
+                <input type="text" [(ngModel)]="brand.brand_Phone" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td><h4>Brand Status</h4></td>
+            <td>
+                <input type="text" [(ngModel)]="brand.brand_Status" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button class="btn btn-primary" (click)="AddBrand()">Add</button>
+            </td>
+        </tr>
+    </table>
+</div>

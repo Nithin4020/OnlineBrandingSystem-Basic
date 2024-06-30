@@ -1,0 +1,49 @@
+<div class="container">
+    <table class="table" *ngIf="isBrandExist">
+       <tr>
+           <td>Brand ID</td>
+           <td>
+               <input type="text" [(ngModel)]="brand.brand_Id" readonly class="form-control">
+           </td>
+       </tr>
+       <tr>
+           <td>Brand Name</td>
+           <td>
+               <input type="text" [(ngModel)]="brand.brand_Name" class="form-control">
+           </td>
+       </tr>
+       <tr>
+        <td>Brand Description</td>
+        <td>
+            <input type="text" [(ngModel)]="brand.brand_Description" class="form-control">
+        </td>
+    </tr>
+      
+       <tr>
+           <td>Brand Email</td>
+           <td>
+               <input type="text" [(ngModel)]="brand.brand_Email" class="form-control">
+           </td>
+       </tr>
+       <tr>
+        <td>Brand Phone</td>
+        <td>
+            <input type="text" [(ngModel)]="brand.brand_Phone" class="form-control">
+        </td>
+        
+        </tr>
+        <tr>
+            <td>Brand Status</td>
+            <td>
+                <input type="text" [(ngModel)]="brand.brand_Status" class="form-control">
+            </td>
+        </tr>
+    
+       <tr>
+           <td colspan="2">
+               <button class="btn btn-primary" (click)="edit()">Save</button> &nbsp;
+           </td>
+       </tr>
+
+   </table>
+</div>
